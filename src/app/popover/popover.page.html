@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Charger une carte</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+<ion-list>
+	<ion-input placeholder="Code carte" [(ngModel)]="codeCarte"></ion-input>
+	<ion-item button color="secondary" (click)="flash()">
+    Flasher
+  	</ion-item>
+  	<ion-item-divider>
+	</ion-item-divider>
+  	<ion-item button color="primary" (click)="closePopover()">
+    Charger la carte
+  	</ion-item>
+  	
+</ion-list>
+</ion-content>

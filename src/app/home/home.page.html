@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-button slot="end" fill="outline" color="dark" (click)="downloadCarte(dede)">
+      <ion-icon slot="icon-only" end name="cog"></ion-icon>
+    </ion-button>
+    <ion-title color="dark" end>
+      <img src="../assets/img/logo.png" width="50px" start/> Tell Me
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content  color='secondary' [fullscreen]='true' (swipeleft)='gotoGauche(this.to,this.currentLangage, this.ido)' (swiperight)='gotoDroite(this.to,this.currentLangage, this.ido)' (swipedown)='gotoBas(this.to,this.currentLangage, this.ido)' (swipeup)='gotoHaut(this.to,this.currentLangage,this.ido)' (tap)="goScribe($event,this.ido,this.to)" (press)="reInit()">
+    <!-- <img  (tap)="goScribe($event)" src="https://bellovacom.fr/fond.jpg"/> -->
+    <!--<ion-item>
+      <ion-label>Changer la langue</ion-label>
+      <ion-select ok-text="Ok" cancel-text="Annuler" [(ngModel)]="to" (ionChange)="changeLangue(this.ido,this.to,this.currentLangage);">
+      	<ion-select-option value="fr" selected >Français</ion-select-option>
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="it">Italian</ion-select-option>
+        <ion-select-option value="es">Spanish</ion-select-option>
+        <ion-select-option value="de">Deutch</ion-select-option>
+      </ion-select>
+    </ion-item> 
+
+    <ion-card color='light'>
+        <ion-card-content>
+            <p >{{ido}}</p>
+        </ion-card-content>
+    </ion-card>-->
+</ion-content>
