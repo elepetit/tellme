@@ -1,0 +1,8 @@
+{
+  "name": "Tellme",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "013479d9"
+}
